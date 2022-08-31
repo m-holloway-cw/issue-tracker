@@ -9,7 +9,6 @@ function App() {
         <p>
           React home page
         </p>
-        </a>
       </header>
     </div>
   );

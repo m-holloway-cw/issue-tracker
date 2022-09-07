@@ -65,14 +65,13 @@ const addIssue = () =>{
   return (
     <div className="App">
 
-      <div style={{ maxWidth: "100%", paddingTop: "12px" }}>
+      <div id="tableContainer">
 
         <table id="issueTable">
           <caption>Issue Tracker Table</caption>
           <thead>
             <tr>
               <th>ID</th>
-              <th>Name</th>
               <th>Type</th>
               <th>Description</th>
             </tr>
@@ -82,7 +81,6 @@ const addIssue = () =>{
             return (
               <tr key={item.id}>
                 <td>#{ item.id }</td>
-                <td>{ item.name }</td>
                 <td>{ item.type }</td>
                 <td>{ item.desc }</td>
                 <td><button onClick={()=> removeItemComp(item.id)}>Remove</button></td>

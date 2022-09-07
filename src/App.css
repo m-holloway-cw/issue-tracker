@@ -6,12 +6,26 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#tableContainer {
+  margin-top: 30px;
+}
 
 #issueTable {
-  width: 100%;
+  width: 80%;
   text-align: center;
+  border: 2px white solid;
+  border-radius: 15px;
+  margin:auto;
 }
 #issueTable > caption {
   font-size: 30px;
-
+  margin-bottom: 30px;
+}
+#issueTable > thead >tr> th{
+  border-bottom: 1px solid white;
+  padding: 15px;
+}
+#issueTable > tbody > tr > td {
+  border-bottom: 1px solid white;
+  height: 40px;
 }

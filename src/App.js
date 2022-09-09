@@ -6,12 +6,13 @@ import './App.css';
 
 const  lambdaURL = 'https://w0macqg62f.execute-api.us-west-1.amazonaws.com/Prod/issues';
 
+//TODOs: persist data changes uses localstorage in useeffect 
 function App() {
   const [dataStore, setDataStore] = useState({
     data : []
 });
 
-const addIssue = (event) =>{
+function addIssue(event){
     var typeOut = document.getElementById('selectMenu').selectedOptions[0].value;
     var descriptionOut = document.getElementById('descText').value;
 
@@ -31,7 +32,7 @@ const addIssue = (event) =>{
       if(statusCode == 200){
         //reload data 
         var newID = dataStore.data.length + 1;
-        //TODO implement changes to state array and track an index value instead of using length
+        //TODO implement uuidv4 as the id 
         var newObj = {id: newID, type: typeOut, desc: descriptionOut};
         var curr = [...dataStore.data];
         curr.push(newObj);
@@ -44,7 +45,7 @@ const addIssue = (event) =>{
     event.preventDefault();
   };
 
-  const removeIssueItem = (issueID) =>{
+  function removeIssueItem(issueID){
     //delete request requires the issueID 
     fetch(lambdaURL, {
       method: 'delete',

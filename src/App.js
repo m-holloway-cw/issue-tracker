@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
+import Header from './Header';
 import logo from './logo.svg';
 import './App.css';
 
@@ -91,6 +92,7 @@ function addIssue(event){
  
   return (
     <div className="App">
+      <Header />
       <div id="tableContainer">
         <table id="issueTable">
           <caption>Issue Tracker Table</caption>

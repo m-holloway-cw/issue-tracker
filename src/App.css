@@ -29,3 +29,37 @@ body {
   border-bottom: 1px solid white;
   height: 40px;
 }
+
+#formContainer {
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+}
+
+#issueForm {
+  width: 80%;
+  text-align: center;
+  border: 2px white solid;
+  border-radius: 15px;
+  margin:auto;
+}
+
+#issueForm > label {
+  padding: 10px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #AAB2BE;
+  border-radius: 1em;
+  color: #AAB2BE;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover{
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 0 10px 0 #AAB2BE inset, 0 0 10px 4px #AAB2BE;
+}
+

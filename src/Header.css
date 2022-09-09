@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    color: #AAB2BE;
+    border: solid 1px #AAB2BE;
+    border-radius: 10px;
+    padding: 10px;
+}
+#headerContainer {
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    line-height: 75px;
+}
